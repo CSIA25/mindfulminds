@@ -1,0 +1,54 @@
+.patient-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.patient-card:hover {
+  transform: translateY(-5px);
+}
+
+.patient-info h4 {
+  font-size: 1.2rem;
+  color: #2c5282;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.patient-info p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin: 0.2rem 0;
+}
+
+.created-at {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.btn-danger {
+  background: #e53e3e; /* Red, change to #68d391 if you want green */
+  color: #fff;
+  padding: 0.5rem 1rem; /* Keep original padding for height, just narrow width */
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 80px; /* Force a narrower width */
+}
+
+.btn-danger:hover {
+  background: #c53030;
+  transform: translateY(-2px);
+}
